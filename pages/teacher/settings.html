@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basaro</title>
+        <link rel="icon" href="/assets/img/icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/assets/css/teacher.css" />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <img class="img-logo" src="/assets/img/logo-light.png" style="width: 130px" alt="" />
+                <button id="toggle-btn" class="text-lg hover:scale-125"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <aside class="sidebar">
+                <a href="/pages/teacher/dashboard.html" class=""
+                    ><span><i class="fa-solid fa-house-chimney"></i></span>
+                    <p>Dashboard</p></a
+                >
+                <a href="/pages/teacher/studentmanagement.html" class=""
+                    ><span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <p>Student Management</p></a
+                >
+                <a href="/pages/teacher/teachermanagement.html" class=""
+                    ><span><i class="fa-solid fa-user-tie"></i></span>
+                    <p>Teacher Management</p></a
+                >
+                <a href="/pages/teacher/performancereport.html" class=""
+                    ><span><i class="fa-solid fa-star"></i></span>
+                    <p>Performance Report</p></a
+                >
+                <a href="/pages/teacher/settings.html" class="active"
+                    ><span><i class="fa-solid fa-gear"></i></span>
+                    <p>Settings</p></a
+                >
+            </aside>
+        </nav>
+
+        <!-- Subject to tailwind -->
+        <main class="size-full flex flex-col">
+            <header class="flex justify-between">
+                <div>
+                    <div class="text-sm text-gray-400">Pages / <span>Header</span></div>
+                    <div class="font-bold">Dashboard</div>
+                </div>
+
+                <div>Hi, <span class="font-semibold">Iverson</span></div>
+            </header>
+
+            <br />
+
+            <div class="card flex flex-col gap-5 mb-5">
+                <div class="">
+                    <h1 class="text-xl font-bold">Profile Information</h1>
+                    <p class="text-[#ADADAD]">Manage your profile and account settings</p>
+                </div>
+                
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <label class="text-sm" for="">Full Name:</label>
+                    <input type="text" class="text-sm rounded-md px-4 py-2 border border-[#ADADAD] bg-opacity-0" style="background: transparent;">
+                </div>
+
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <label class="text-sm" for="">Username:</label>
+                    <input type="text" class="text-sm rounded-md px-4 py-2 border border-[#ADADAD] bg-opacity-0" style="background: transparent;">
+                </div>
+
+                <button class="px-5 py-2 bg-[#F4C300] border border-2 border-[#F4C300] rounded-lg !font-bold text-black text-xs w-fit hover:scale-105">SAVE</button>
+            </div>
+            <div class="card flex flex-col gap-5">
+                <div class="">
+                    <h1 class="text-xl font-bold">Update Password</h1>
+                    <p class="text-[#ADADAD]">Ensure your account is using a long, unique password to stay secure </p>
+                </div>
+                
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <label class="text-sm" for="">Current Password:</label>
+                    <input type="text" class="text-sm rounded-md px-4 py-2 border border-[#ADADAD] bg-opacity-0" style="background: transparent;">
+                </div>
+
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <label class="text-sm" for="">New Password:</label>
+                    <input type="text" class="text-sm rounded-md px-4 py-2 border border-[#ADADAD] bg-opacity-0" style="background: transparent;">
+                </div>
+
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <label class="text-sm" for="">Confirm Password:</label>
+                    <input type="text" class="text-sm rounded-md px-4 py-2 border border-[#ADADAD] bg-opacity-0" style="background: transparent;">
+                </div>
+
+                <button class="px-5 py-2 bg-[#F4C300] border border-2 border-[#F4C300] rounded-lg !font-bold text-black text-xs w-fit hover:scale-105">SAVE</button>
+            </div>
+        </main>
+
+        <script src="/assets/js/teacher.js" defer></script>
+    </body>
+</html>
