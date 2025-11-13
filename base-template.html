@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basaro</title>
+        <link rel="icon" href="/assets/img/icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/assets/css/student.css">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="nav">
+            <img class="logo" src="/assets/img/logo-light.png" alt="">
+            <div class="nav-links" id="nav-links">
+                <a href="/dashboard" class="text-lg">Dashboard</a>
+                <a href="/lessons" class="text-lg">Lessons</a>
+                <a href="/achievements" class="text-lg">Achievements</a>
+                <a href="/profile" class="text-lg">Profile</a>
+                <a href="/teacher/dashboard" class="text-lg absolute right-[50px] hover:scale-125"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </div>
+        </nav>
+
+        <nav class="nav-broken">
+            <img class="logo-broken" width="60" src="{{asset('img/logo-light-broken.png')}}" alt="">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </nav>
+
+        
+
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </body>
+
+</html>
