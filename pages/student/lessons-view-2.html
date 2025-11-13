@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Basaro</title>
-        <link rel="icon" href="/assets/img/icon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="/assets/css/student.css">
+        <link rel="icon" href="/Basaro-live/assets/img/icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/Basaro-live/assets/css/student.css">
 
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,18 +14,18 @@
     <body>
         <!-- Navbar -->
         <nav class="nav">
-            <img class="logo" src="/assets/img/logo-light.png" alt="">
+            <img class="logo" src="/Basaro-live/assets/img/logo-light.png" alt="">
             <div class="nav-links" id="nav-links">
-                <a href="/pages/student/dashboard.html" class="text-lg">Dashboard</a>
-                <a href="/pages/student/lessons.html" class="text-lg active">Lessons</a>
-                <a href="/pages/student/achievements.html" class="text-lg">Achievements</a>
-                <a href="/pages/student/profile.html" class="text-lg">Profile</a>
-                <a href="/pages/teacher/dashboard.html" class="text-lg absolute right-[50px] hover:scale-125"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <a href="/Basaro-live/pages/student/dashboard.html" class="text-lg">Dashboard</a>
+                <a href="/Basaro-live/pages/student/lessons.html" class="text-lg active">Lessons</a>
+                <a href="/Basaro-live/pages/student/achievements.html" class="text-lg">Achievements</a>
+                <a href="/Basaro-live/pages/student/profile.html" class="text-lg">Profile</a>
+                <a href="/Basaro-live/pages/teacher/dashboard.html" class="text-lg absolute right-[50px] hover:scale-125"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
             </div>
         </nav>
 
         <nav class="nav-broken">
-            <img class="logo-broken" width="60" src="/assets/img/logo-light-broken.png" alt="">
+            <img class="logo-broken" width="60" src="/Basaro-live/assets/img/logo-light-broken.png" alt="">
             <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
         </nav>
 
@@ -43,8 +43,8 @@
         },
         handleAudio() {
             if (!this.soundEnabled) return;
-            if (this.page === 1) this.playAudio('/assets/audio/L1P1.m4a');
-            if (this.page === 2) this.playAudio('/assets/audio/L1P2.m4a');
+            if (this.page === 1) this.playAudio('/Basaro-live/assets/audio/L1P1.m4a');
+            if (this.page === 2) this.playAudio('/Basaro-live/assets/audio/L1P2.m4a');
         }
     }"
     x-init="$watch('page', () => handleAudio())"
@@ -65,10 +65,10 @@
     <div class="h-full flex items-center justify-center">
         <!-- Background figure -->
         <img 
-            x-show="page === 1" class="absolute bottom-[150px] left-[80px] z-[1] w-[730px] pointer-events-none" src="/assets/img/layunin-figure.png" alt="Layunin Figure"
+            x-show="page === 1" class="absolute bottom-[150px] left-[80px] z-[1] w-[730px] pointer-events-none" src="/Basaro-live/assets/img/layunin-figure.png" alt="Layunin Figure"
         >
         <img 
-            x-show="page === 2" class="absolute bottom-[20px] left-[50px] z-[1] w-[730px] pointer-events-none" src="/assets/img/layunin-figure.png" alt="Layunin Figure"
+            x-show="page === 2" class="absolute bottom-[20px] left-[50px] z-[1] w-[730px] pointer-events-none" src="/Basaro-live/assets/img/layunin-figure.png" alt="Layunin Figure"
         >
 
         <div class="card w-full flex flex-col items-center gap-5 relative text-lg max-h-[80vh]">
@@ -107,7 +107,7 @@
             <div class="flex w-full justify-end gap-5 mt-4">
                 <!-- Back -->
                 <button
-                    @click="page === 1 ? window.location.href = '/pages/student/lessons-view-1.html' : page--"
+                    @click="page === 1 ? window.location.href = '/Basaro-live/pages/student/lessons-view-1.html' : page--"
                     class="px-4 py-2 bg-[#F4C300] rounded-md !text-black font-bold"
                 >
                     <i class="fa-solid fa-arrow-left !text-black"></i> Balik
@@ -127,7 +127,7 @@
                 <!-- Continue -->
                 <button 
                     x-show="page === 2"
-                    onclick="window.location.href='/pages/student/lessons-view-3.html'"
+                    onclick="window.location.href='/Basaro-live/pages/student/lessons-view-3.html'"
                     class="px-4 py-2 bg-[#F4C300] rounded-md !text-black font-bold"
                 >
                     Magpatuloy
